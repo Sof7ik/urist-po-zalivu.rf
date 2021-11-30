@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/cases-modal.css">
 
     <link
         rel="stylesheet"
@@ -59,23 +62,31 @@
 
                         <div class="banner-advantages">
                             <div class="banner-advantage__item">
-                                <img src="" alt="" class="banner-advantage__item__icon">
+                                <img src="./img/icons/banner-advantages/prisoner.svg"
+                                     alt="нарушитель"
+                                     class="banner-advantage__item__icon">
                                 <p class="banner-advantage__item__text">Установим виновника</p>
                             </div>
 
                             <div class="banner-advantage__item">
-                                <img src="" alt="" class="banner-advantage__item__icon">
+                                <img src="./img/icons/banner-advantages/checklist.svg"
+                                     alt="чек-лист"
+                                     class="banner-advantage__item__icon">
                                 <p class="banner-advantage__item__text">Оценим
                                     по максимуму</p>
                             </div>
 
                             <div class="banner-advantage__item">
-                                <img src="" alt="" class="banner-advantage__item__icon">
+                                <img src="./img/icons/banner-advantages/profit.svg"
+                                     alt="профит"
+                                     class="banner-advantage__item__icon">
                                 <p class="banner-advantage__item__text">Вернем больше суммы ущерба</p>
                             </div>
 
                             <div class="banner-advantage__item">
-                                <img src="" alt="" class="banner-advantage__item__icon">
+                                <img src="./img/icons/banner-advantages/wallet.svg"
+                                     alt="кошелёк"
+                                     class="banner-advantage__item__icon">
                                 <p class="banner-advantage__item__text">Рассчитаетесь по результату</p>
                             </div>
                         </div>
@@ -191,6 +202,11 @@
                             </p>
                         </li>
                     </ul>
+
+                    <button class="immediate-help btn-primary"
+                            data-modal="get-help">
+                        Связаться с нами для оценки ущерба
+                    </button>
                 </div>
             </section>
 
@@ -501,6 +517,45 @@
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
+
+                <div class="cases-modal-overlay showed">
+                    <div class="cases-modal">
+                        <button aria-label="Закрыть модальное окно" id="close-cases-modal"></button>
+
+                        <div class="cases-modal__inner-wrapper">
+                            <h3 class="cases-modal__title">Кейс №1</h3>
+
+                            <div class="cases-modal__content">
+                                <div class="cases-modal__photos">
+                                    <div class="cases-modal__photos__slider">
+                                        <img src="./img/cases/thumbs/thumb-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="cases-modal__photos__thumbs">
+                                        <img src="./img/cases/thumbs/thumb-1.jpg" alt="" class="case-thumb">
+                                        <img src="./img/cases/thumbs/thumb-2.jpg" alt="" class="case-thumb">
+                                        <img src="./img/cases/thumbs/thumb-1.jpg" alt="" class="case-thumb">
+                                        <img src="./img/cases/thumbs/thumb-2.jpg" alt="" class="case-thumb">
+                                        <img src="./img/cases/thumbs/thumb-1.jpg" alt="" class="case-thumb">
+                                        <img src="./img/cases/thumbs/thumb-2.jpg" alt="" class="case-thumb">
+                                    </div>
+                                </div>
+
+                                <div class="cases-modal__desc-text">
+                                    <p>В результате неисправности отвода стояка горячего водоснабжения (ГВС) (срыв резьбы (врезки) на вводе первого запорного (отключающего) устройства (крана шарового) на разводке ГВС) в квартире в городе Москве, был нанесен ущерб имуществу собственнику указанного жилого помещения.
+                                        <br>
+                                        <br>
+                                        В результате залива горячей водой жилому помещению причинены существенные повреждения напольного покрытия (паркет дубовый, паркет буковый), стен (обои виниловые, штукатурная сетка, водно-дисперсионная краска), потолка (штукатурная сетка, водно-дисперсионная краска) и др.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="cases-modal__additional">
+                                <a href="">Иск ГБУ “Жилищник”</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="faq">
@@ -622,14 +677,48 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contacts-and-map">
+                <div class="map-wrapper">
+
+                </div>
+
+                <div class="contacts">
+                    <h2 class="contacts-title">Контакты</h2>
+
+                    <address class="contacts__address">123100, Москва, Пресненская наб. д. 12, оф. А352</address>
+
+                    <p class="contacts__time"><strong>Время работы:</strong> 10:00 до 19:00</p>
+
+                    <div class="contacts__telephones">
+                        <a href="tel:+7 (495) 008-83-18">+7 (495) 008-83-18</a>
+                        <a href="tel:+7 (925) 044-88-31">+7 (925) 044-88-31</a>
+                    </div>
+
+                    <a href="mailto:sup-estate@mail.ru">sup-estate@mail.ru</a>
+                </div>
+            </section>
         </main>
 
         <footer id="page-footer">
+            <div class="container-1292">
+                <div class="footer__agreements">
+                    <a href="">Политика конфиденциальности</a>
+                    <a href="">Пользовательское соглашение</a>
+                </div>
 
+                <div class="footer__copyright">
+                    <p class="mediamint">
+                        Развитие сайта –
+                        <a href="https://mediamint.ru" target="_blank">MediaMint</a>
+                    </p>
+
+                </div>
+            </div>
         </footer>
     </div>
 
-    <script src="./js/focus-visible.min.js" defer></script>
+<!--    <script src="./js/focus-visible.min.js" defer></script>-->
 </body>
 
 </html>

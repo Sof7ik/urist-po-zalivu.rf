@@ -1,0 +1,112 @@
+footer#page-footer
+{
+	background-color: var(--main-blue-color);
+
+	padding: 35px 0;
+}
+
+#page-footer .container-1292
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__agreements
+{
+	margin-right: 40px;
+}
+
+.footer__agreements a
+{
+	position: relative;
+
+	display: block;
+	margin-bottom: 10px;
+
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+
+	color: #FFFFFF;
+}
+.footer__agreements a:last-child
+{
+	margin-bottom: 0;
+}
+
+.footer__agreements a::before
+{
+	position: absolute;
+
+	content: "";
+	bottom: 1px;
+	left: 0;
+	width: 0;
+	height: 1px;
+
+	background-color: #fff;
+
+	transition: width .7s;
+}
+
+@media screen and (min-width: 769px)
+{
+	.footer__agreements a:hover::before
+	{
+		width: 100%;
+	}
+	.footer__agreements a:focus-visible
+	{
+		outline: none;
+	}
+	.footer__agreements a:focus-visible::before
+	{
+		width: 100%;
+	}
+}
+
+.footer__copyright p.mediamint,
+.footer__copyright p.mediamint a
+{
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #FFFFFF;
+}
+.footer__copyright p.mediamint a
+{
+	position: relative;
+}
+.footer__copyright p.mediamint a::before
+{
+	position: absolute;
+
+	content: "";
+	bottom: 1px;
+	left: 0;
+	width: 0;
+	height: 1px;
+
+	background-color: #fff;
+
+	transition: width .7s;
+}
+
+@media screen and (min-width: 769px)
+{
+	.footer__copyright p.mediamint a:hover::before
+	{
+		width: 100%;
+	}
+	.footer__copyright p.mediamint a:focus-visible::before
+	{
+		width: 100%;
+	}
+}
