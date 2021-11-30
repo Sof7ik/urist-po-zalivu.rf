@@ -1,0 +1,100 @@
+#page-header
+{
+    background-color: var(--main-blue-color);
+    padding: 18px 0 14px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    z-index: 2;
+}
+
+#page-header .container-1292
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#page-header .social-buttons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#page-header .social-buttons a
+{
+    display: block;
+
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    
+    padding: 13px;
+
+    margin-right: 19px;
+}
+#page-header .social-buttons a:last-child
+{
+    margin-right: 0;
+}
+
+#page-header .social-buttons a img
+{
+    width: 23px;
+    opacity: 0.5;
+
+    transition: opacity .3s;
+}
+
+#page-header .social-buttons a:hover img
+{
+    opacity: 1;
+}
+
+#page-header .telephones
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-left: 56px;
+}
+
+#page-header .telephones a
+{
+    display: block;
+    border-bottom: 1px solid transparent;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 15px;
+
+    transition: border-bottom-color .3s;
+}
+#page-header .telephones a:last-child
+{
+    margin-bottom: 0;
+}
+
+#page-header .telephones a:hover
+{
+    border-bottom-color: #fff;
+}
+
+#page-header .telephones a:focus-visible
+{
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}

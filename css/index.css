@@ -1,0 +1,105 @@
+:root
+{
+    --main-red-color: #DA1B1B;
+    --main-blue-color: #162D62;
+
+    --dark-blue: #242C42;
+    --light-blue: #2C4C97;
+
+    --half-opacity-blue: rgba(26, 49, 104, 0.51);
+    --eighty-percent-blue: rgba(22, 45, 98, 0.8);
+
+    --grey-color: #E5E5E5;
+    --deep-white-color: #F3F6FE;
+}
+
+
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    display: block;
+    object-fit: cover;
+}
+
+button
+{
+    display: block;
+    max-width: max-content;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.container-1292
+{
+    width: 100%;
+    max-width: calc(1292px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.btn-primary
+{
+    background-color: var(--main-red-color);
+    box-shadow: 0px 5.45455px 21.8182px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    padding: 22px 90px;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21.8182px;
+    line-height: 165.69%;
+
+    letter-spacing: 0.015em;
+
+    color: #FFFFFF;
+
+    transition: transform .5s;
+}
+
+.btn-primary:hover
+{
+    transform: scale(1.1);
+}
+
+.red-text
+{
+    color: var(--main-red-color);
+}
+
+.section-title
+{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 165.69%;
+
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
