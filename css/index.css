@@ -22,7 +22,6 @@
     --deep-white-color: #F3F6FE;
 }
 
-
 *, *::before, *::after
 {
     margin: 0;
@@ -58,11 +57,16 @@ html, body
     height: 100%;
 }
 
+.not-scrollable
+{
+    overflow-y: hidden;
+}
+
 .container-1292
 {
     width: 100%;
-    max-width: calc(1292px + 40px);
-    padding: 0 20px;
+    max-width: calc(1292px + 40px + 43px);
+    padding: 0 40px 0 43px;
     margin: 0 auto;
 }
 
