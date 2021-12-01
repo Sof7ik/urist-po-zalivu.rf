@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
@@ -50,6 +50,11 @@ a
 {
     text-decoration: none;
 }
+a[href^="mailto:"],
+a[href^="tel:+"]
+{
+    white-space: nowrap;
+}
 
 html, body
 {
@@ -76,7 +81,10 @@ html, body
     box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
-    padding: 22px 90px;
+    /*padding: 22px 90px;*/
+    padding: 22px 0;
+    width: 100%;
+    max-width: 400px;
 
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -119,4 +127,36 @@ html, body
     letter-spacing: 0.025em;
 
     color: #000000;
+}
+@media screen and (max-width: 1024px)
+{
+    .section-title
+    {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .section-title
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .section-title
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .section-title
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
