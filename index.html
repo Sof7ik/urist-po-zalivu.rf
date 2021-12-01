@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="css/cases-modal.css">
+    <link rel="stylesheet" href="css/get-help-modal.css">
 
     <link
         rel="stylesheet"
@@ -48,7 +49,7 @@
                 </div>
 
                 <div class="telephones">
-                    <a href="tel:+79250448831" class="js-focus-visible">+7 (925) 044-88-31</a>
+                    <a href="tel:+79250448831">+7 (925) 044-88-31</a>
                     <a href="tel:+7 (495) 008-83-18">+7 (495) 008-83-18</a>
                 </div>
             </div>
@@ -716,6 +717,41 @@
                 </div>
             </div>
         </footer>
+
+        <div class="get-help-overlay showed">
+            <div class="get-help-content">
+                <button id="close-get-help">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <h4 class="get-help-modal__title">Заказать обратный звонок</h4>
+
+                <form action="#" method="POST" class="get-help-modal__form">
+                    <input type="text"
+                           name="userName"
+                           data-input-info="Имя человека: "
+                           placeholder="Ваше имя"
+                           class="get-help__text-input">
+
+                    <input type="tel"
+                           name="userTel"
+                            data-input-info="Номер телефона: "
+                            placeholder="+7 ("
+                            class="get-help__text-input">
+                    <input type="submit"
+                           value="Отправить"
+                           class="get-help__submit-form">
+                </form>
+
+                <p class="get-help__agreement-text">
+                    Отправляя форму, я даю согласие на
+                    <a href="">обработку персональный данных</a>
+                    и соглашаюсь с
+                    <a href="">условиями Политики конфеденциальности</a>
+                </p>
+            </div>
+        </div>
     </div>
 
 <!--    <script src="./js/focus-visible.min.js" defer></script>-->

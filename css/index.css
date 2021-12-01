@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
+/*.js-focus-visible:focus:not(.focus-visible) {*/
+/*    transform: scale(2);*/
+/*}*/
+
 :root
 {
     --main-red-color: #DA1B1B;
@@ -24,6 +28,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 img
@@ -110,8 +115,4 @@ html, body
     letter-spacing: 0.025em;
 
     color: #000000;
-}
-
-.js-focus-visible :focus:not(.focus-visible) {
-    outline: none;
 }
