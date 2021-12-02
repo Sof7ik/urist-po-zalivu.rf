@@ -232,23 +232,20 @@
 
 .get-help__submit-form
 {
+    display: block;
+
     cursor: pointer;
     border: 2px solid var(--main-blue-color);
-
     background-color: var(--main-blue-color);
     border-radius: 9px;
-
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 105.8%;
-
     text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
-
     padding: 14px 30px;
 }
 @media screen and (max-width: 980px)
@@ -264,7 +261,6 @@
     .get-help__submit-form
     {
         padding: 13px 30px;
-
         font-size: 11px;
     }
 }
