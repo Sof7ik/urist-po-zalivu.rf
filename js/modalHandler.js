@@ -70,7 +70,11 @@ document.addEventListener('DOMContentLoaded', e => {
         .addEventListener('click',
             e => modalHandler(e, casesModalOverlay, casesModalShowedClass));
 
-    document.querySelectorAll('[data-modal="case"]').forEach(elem => {
+    // document.querySelectorAll('[data-modal="case"]').forEach(elem => {
+    //     elem.addEventListener('click', e => modalHandler(e, casesModalOverlay, casesModalShowedClass));
+    // })
+
+    document.querySelectorAll('.case-item').forEach(elem => {
         elem.addEventListener('click', e => modalHandler(e, casesModalOverlay, casesModalShowedClass));
     })
 

@@ -654,7 +654,9 @@
 
                 <div class="cases-modal-overlay">
                     <div class="cases-modal">
-                        <button aria-label="Закрыть модальное окно" id="close-cases-modal"></button>
+                        <div class="close-cases-modal-wrapper">
+                            <button aria-label="Закрыть модальное окно" id="close-cases-modal"></button>
+                        </div>
 
                         <div class="cases-modal__inner-wrapper">
                             <h3 class="cases-modal__title">Кейс №1</h3>
@@ -681,11 +683,13 @@
                                         <br>
                                         В результате залива горячей водой жилому помещению причинены существенные повреждения напольного покрытия (паркет дубовый, паркет буковый), стен (обои виниловые, штукатурная сетка, водно-дисперсионная краска), потолка (штукатурная сетка, водно-дисперсионная краска) и др.
                                     </p>
-                                </div>
-                            </div>
 
-                            <div class="cases-modal__additional">
-                                <a href="">Иск ГБУ “Жилищник”</a>
+                                    <div class="cases-modal__additional">
+                                        <div class="documents" id="case-documents">
+                                            <a href="">Иск ГБУ “Жилищник”</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -790,6 +794,11 @@
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90340d8ff7344d359a724da95d805a75948d721180064b095f9605b0ccd1b026&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
 
+                <div class="map-wrapper-mobile">
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af43969e6fcf636d7783902d54f4cbd41ca6b68d2e08f4b574a180317a1003b92&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+
                 <div class="contacts">
                     <h2 class="contacts-title">Контакты</h2>
 
@@ -803,6 +812,20 @@
                     </div>
 
                     <a href="mailto:sup-estate@mail.ru">sup-estate@mail.ru</a>
+
+                    <div class="contacts__social">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="./img/social/insta-icon.svg" alt="иконка instagram">
+                        </a>
+
+                        <a href="https://t.me" target="_blank">
+                            <img src="./img/social/telegram-icon.svg" alt="иконка Telegram">
+                        </a>
+
+                        <a href="https://whatsapp.com" target="_blank">
+                            <img src="./img/social/whatsapp-icon.svg" alt="иконка WhatsApp">
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>

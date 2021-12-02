@@ -4,6 +4,13 @@ footer#page-footer
 
 	padding: 35px 0;
 }
+@media screen and (max-width: 650px)
+{
+	footer#page-footer
+	{
+		padding: 20px 0 29px;
+	}
+}
 
 #page-footer .container-1292
 {
@@ -16,6 +23,15 @@ footer#page-footer
 .footer__agreements
 {
 	margin-right: 40px;
+}
+@media screen and (max-width: 650px)
+{
+	.footer__agreements
+	{
+		margin-right: 0;
+
+		margin-bottom: 25px;
+	}
 }
 
 .footer__agreements a
@@ -84,6 +100,7 @@ footer#page-footer
 {
 	position: relative;
 }
+
 .footer__copyright p.mediamint a::before
 {
 	position: absolute;
@@ -98,7 +115,13 @@ footer#page-footer
 
 	transition: width .7s;
 }
-
+@media screen and (max-width: 650px)
+{
+	.footer__copyright p.mediamint a::before
+	{
+		width: 100%;
+	}
+}
 @media screen and (min-width: 769px)
 {
 	.footer__copyright p.mediamint a:hover::before

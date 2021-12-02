@@ -274,6 +274,7 @@
 .know-your-decision
 {
     padding: 55px 0 94px;
+    background-color: #E5E5E5;
 }
 @media screen and (max-width: 600px)
 {
@@ -554,7 +555,7 @@
 {
     .water-right-now
     {
-        padding: 50px 0 30px;
+        padding: 50px 0 0;
     }
 }
 
@@ -2272,12 +2273,25 @@
     right: 0;
     bottom: 0;
 }
-@media screen and (max-width: 650px) 
+.map-wrapper-mobile
+{
+    display: none;
+}
+@media screen and (max-width: 650px)
 {
     .map-wrapper
     {
+        display: none;
         position: relative;
 
+        max-height: 400px;
+        overflow-y: hidden;
+    }
+
+    .map-wrapper-mobile
+    {
+        display: block;
+        width: 100%;
         max-height: 400px;
         overflow-y: hidden;
     }
@@ -2327,6 +2341,8 @@
     {
         position: static;
         max-width: unset;
+
+        padding-bottom: 0;
     }
 }
 
@@ -2468,5 +2484,51 @@
     .contacts a[href^="mailto:"]
     {
         font-size: 18px;
+    }
+}
+
+.contacts__social
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 240px;
+    margin: 35px auto 0;
+}
+
+.contacts__social a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 17px;
+
+    background-color: var(--light-blue);
+
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px)
+{
+    .contacts__social a
+    {
+        padding: 13px;
+    }
+}
+
+.contacts__social a img
+{
+    width: 29px;
+    height: 29px;
+}
+@media screen and (max-width: 768px)
+{
+    .contacts__social a img
+    {
+        width: 22px;
+        height: 22px;
     }
 }
