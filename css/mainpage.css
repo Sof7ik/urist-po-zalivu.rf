@@ -1395,7 +1395,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 35px;
+    /*margin-bottom: 35px;*/
 }
 
 .cases-section-title .section-title
@@ -1483,6 +1483,8 @@
 
 .cases-slider-wrapper .swiper
 {
+    padding-top: 35px;
+
     max-width: 100%;
     margin: 0 auto;
 
