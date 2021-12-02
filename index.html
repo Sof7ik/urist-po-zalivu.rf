@@ -851,7 +851,7 @@
             </div>
         </footer>
 
-        <div class="get-help-overlay">
+        <div class="get-help-overlay showed">
             <div class="get-help-content">
                 <button id="close-get-help">
                     <span class="line"></span>
@@ -861,17 +861,20 @@
                 <h4 class="get-help-modal__title">Заказать обратный звонок</h4>
 
                 <form action="#" method="POST" class="get-help-modal__form">
-                    <input type="text"
-                           name="userName"
-                           data-input-info="Имя человека: "
-                           placeholder="Ваше имя"
-                           class="get-help__text-input">
+                    <div class="get-help__inputs">
+                        <input type="text"
+                               name="userName"
+                               data-input-info="Имя человека: "
+                               placeholder="Ваше имя"
+                               class="get-help__text-input">
 
-                    <input type="tel"
-                           name="userTel"
-                            data-input-info="Номер телефона: "
-                            placeholder="+7 ("
-                            class="get-help__text-input">
+                        <input type="tel"
+                               name="userTel"
+                               data-input-info="Номер телефона: "
+                               placeholder="+7 ("
+                               class="get-help__text-input">
+                    </div>
+
                     <input type="submit"
                            value="Отправить"
                            class="get-help__submit-form">

@@ -37,6 +37,13 @@
     position: relative;
     overflow: hidden;
 }
+@media screen and (max-width: 600px)
+{
+    .get-help-content
+    {
+        padding: 24px 34px 42px 23px;
+    }
+}
 
 #close-get-help
 {
@@ -49,8 +56,14 @@
 
     min-width: calc(29px + 52px);
     min-height: calc(29px + 24px);
-
-    /*background-color: transparent;*/
+}
+@media screen and (max-width: 600px)
+{
+    #close-get-help
+    {
+        min-width: calc(17px + 40px);
+        min-height: calc(17px + 25px);
+    }
 }
 
 #close-get-help .line
@@ -60,7 +73,7 @@
     left: 50%;
     border-radius: 5px;
     background-color: #fff;
-    height: 29px;
+    height: 21px;
     width: 4px;
 }
 
@@ -86,18 +99,80 @@
 
     color: var(--main-blue-color);
 }
+@media screen and (max-width: 768px)
+{
+    .get-help-modal__title
+    {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .get-help-modal__title
+    {
+        text-align: left;
+        font-size: 20px;
+
+        padding-right: 24px;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .get-help-modal__title
+    {
+        font-size: 18px;
+        padding-right: 24px;
+    }
+}
 
 .get-help-modal__form
 {
     margin-top: 36px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr minmax(min-content, 246px);
-    grid-gap: 25px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: stretch;
-    justify-content: stretch;
 
     margin-bottom: 18px;
+}
+@media screen and (max-width: 980px)
+{
+    .get-help-modal__form
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.get-help__inputs
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 14px;
+}
+@media screen and (max-width: 980px)
+{
+    .get-help__inputs
+    {
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .get-help__inputs
+    {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .get-help__text-input
@@ -115,11 +190,44 @@
 
     padding: 13px 9px;
 
+    margin-right: 14px;
+
     transition: color .3s;
+}
+.get-help__inputs .get-help__text-input:last-child
+{
+    margin-right: 0;
 }
 .get-help__text-input:placeholder-shown
 {
     color: #A7A7A7;
+}
+@media screen and (max-width: 768px)
+{
+    .get-help__text-input
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .get-help__inputs .get-help__text-input:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .get-help__text-input
+    {
+        padding: 11px 17px;
+        font-size: 12px;
+        line-height: 16px;
+
+        border-radius: 6px;
+        border: 1px solid #A7A7A7;
+
+        font-weight: 400;
+    }
 }
 
 .get-help__submit-form
@@ -143,6 +251,23 @@
 
     padding: 14px 30px;
 }
+@media screen and (max-width: 980px)
+{
+    .get-help__submit-form
+    {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .get-help__submit-form
+    {
+        padding: 13px 30px;
+
+        font-size: 11px;
+    }
+}
 
 .get-help__agreement-text,
 .get-help__agreement-text a
@@ -155,21 +280,30 @@
 
     color: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 600px)
+{
+    .get-help__agreement-text,
+    .get-help__agreement-text a
+    {
+        font-size: 9px;
+    }
+}
 
 .get-help__agreement-text a
 {
-    position: relative;
+    /*position: relative;*/
+    text-decoration: underline;
 }
 
-.get-help__agreement-text a::before
-{
-    content: "";
-    position: absolute;
+/*.get-help__agreement-text a::before*/
+/*{*/
+/*    content: "";*/
+/*    position: absolute;*/
 
-    width: 100%;
-    height: 1px;
+/*    width: 100%;*/
+/*    height: 1px;*/
 
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-}
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    background-color: rgba(0,0,0,0.5);*/
+/*}*/

@@ -1,14 +1,26 @@
 .mainpage-banner
 {
     height: 100vh;
-    min-height: 664px;
-
+    min-height: 1000px;
     background-image: url("../img/banner-img.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     position: relative;
+}
+@media screen and (max-width: 768px)
+{
+    .mainpage-banner
+    {
+        min-height: 800px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .mainpage-banner
+    {
+        min-height: 664px;
+    }
 }
 
 .mainpage-banner::before
@@ -76,6 +88,14 @@
         line-height: 40px;
     }
 }
+@media screen and (max-width: 350px)
+{
+    .main-header
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
 
 .banner-advantages
 {
@@ -100,12 +120,11 @@
 {
     .banner-advantages
     {
-        margin-top: 20px;
+         margin-top: 20px;
 
         background-color: rgba(255, 255, 255, 0.3);
         grid-template-columns: 1fr;
         grid-gap: 10px 0;
-
         padding: 20px 15px 34px 25px;
     }
 }
