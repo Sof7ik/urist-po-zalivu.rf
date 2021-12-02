@@ -2330,7 +2330,8 @@
     padding: 72px 122px 66px 90px;
     background-color: var(--main-blue-color);
     position: absolute;
-    top: 119px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 125px;
 }
 @media screen and (max-width: 1320px)
