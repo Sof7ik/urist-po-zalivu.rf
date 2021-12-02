@@ -1403,6 +1403,13 @@
     max-width: 850px;
     margin-right: 60px;
 }
+@media screen and (max-width: 768px)
+{
+    .cases-section-title .section-title
+    {
+        margin-right: 0;
+    }
+}
 
 .cases-swiper-desktop-pagination
 {
@@ -1460,15 +1467,34 @@
 .cases-slider-wrapper
 {
     overflow-x: hidden;
+
+    max-width: calc(1292px + 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media screen and (max-width: 768px)
+{
+    .cases-slider-wrapper
+    {
+        max-width: 100%;
+        padding: 0;
+    }
 }
 
 .cases-slider-wrapper .swiper
 {
-    max-width: calc(100% - 80px);
+    max-width: 100%;
     margin: 0 auto;
 
     overflow-x: visible !important;
     overflow-y: visible !important;
+}
+@media screen and (max-width: 768px)
+{
+    .cases-slider-wrapper .swiper
+    {
+        max-width: calc(100% - 80px);
+    }
 }
 
 .cases-slider-wrapper .swiper-wrapper
